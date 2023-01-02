@@ -1,0 +1,22 @@
+// Q5 - Write a Java program to swap two numbers with the help of a third variable.
+// Sample Input : 2,3
+// Sample Output : 3,2
+
+solution ->
+
+import java.util.Scanner;
+class Assignment 
+{
+ public static void main(String[] args) {
+    Scanner kb = new Scanner(System.in);
+    int a,b,c ;
+    System.out.println("Enter two number=>");
+    a = kb.nextInt() ;
+     b = kb.nextInt() ;
+     System.out.println("Before swapping -> "+a+" , "+b);
+     c = a ;
+     a = b ;
+    b = c ;
+    System.out.println("After swapping -> "+a+" , "+b);
+ }
+}
