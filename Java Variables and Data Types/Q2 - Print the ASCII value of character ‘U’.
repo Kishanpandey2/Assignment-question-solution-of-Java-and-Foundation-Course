@@ -1,0 +1,15 @@
+Q2 - Print the ASCII value of character ‘U’. (Easy)
+ Sample Input : already mentioned as ‘U’
+ Sample Output : 85
+ 
+ Solution ->
+ 
+import java.util.Scanner;
+class Assignment 
+{
+ public static void main(String[] args) {
+    Scanner kb = new Scanner(System.in);
+    char ch = 'U' ;
+    System.out.println("ASCII value=> "+ (int)ch);
+ }
+}
