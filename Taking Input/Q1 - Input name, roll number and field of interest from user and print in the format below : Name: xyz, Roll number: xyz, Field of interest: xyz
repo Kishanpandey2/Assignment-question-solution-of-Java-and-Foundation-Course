@@ -1,0 +1,27 @@
+// Q1 - Input name, roll number and field of interest from user and print in the format below :
+// Name: xyz, Roll number: xyz, Field of interest: xyz
+// Input : Single line format
+// Aman Gupta 4053 Physics
+// Output :
+// Name: Aman Gupta
+// Roll Number: 4053
+// Field of interest: Physics
+
+solution ->
+
+import java.util.Scanner;
+class Assignment 
+{
+ public static void main(String[] args) {
+    Scanner kb = new Scanner(System.in);
+    String name ;
+    int rollNo ;
+    String interest ;
+    System.out.println("Enter name , rollnumber and field of interest ->");
+    name = kb.nextLine() ;
+    rollNo = kb.nextInt() ;
+    kb.nextLine() ;
+    interest = kb.next() ;
+    System.out.println(name+" "+rollNo+" "+interest);
+ }
+}
