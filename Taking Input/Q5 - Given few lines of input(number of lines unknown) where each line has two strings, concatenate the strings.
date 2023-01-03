@@ -1,0 +1,38 @@
+// Q5 - Given few lines of input(number of lines unknown) where each line has two
+// strings, concatenate the strings.
+// Input :
+// Hello World
+// Happy Faces
+// Sunny Day
+// Good Morning
+// Output :
+// HelloWorld
+// HappyFaces
+// SunnyDay
+// GoodMorning
+
+solution -->
+
+import java.util.Scanner;
+class Assignment 
+{
+ public static void main(String[] args) {
+    Scanner kb = new Scanner(System.in);
+    int tc= kb.nextInt() ;
+   String []string = new String[tc];
+   System.out.println("Input->");
+    for(int i = 0;i<tc; i++)
+    {
+      String s1 ,s2 ;
+      kb.nextLine();
+      s1 = kb.next();
+      s2 = kb.next() ;
+      string[i]= s1+ s2 ;
+    }
+    System.out.println("Output=>");
+    for(int i = 0 ;i<tc;i++)
+    {
+      System.out.println(string[i]);
+    }
+ }
+}
