@@ -1,0 +1,21 @@
+// Q2 - Input two different string and print them in same line.
+// Input :
+// Level
+// Up
+// Output :
+// LevelUp
+
+solution ->
+
+import java.util.Scanner;
+class Assignment 
+{
+ public static void main(String[] args) {
+    Scanner kb = new Scanner(System.in);
+   String str1,str2 ;
+   System.out.println("Enter two string ->");
+   str1 = kb.nextLine() ;
+   str2 = kb.nextLine() ;
+   System.out.print("Output-> "+str1+str2);
+ }
+}
