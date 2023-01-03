@@ -1,0 +1,36 @@
+// Q4 - Given two numbers, return their sum in the following format:
+// Int t representing number of test cases
+// T lines of Two integers representing the numbers to be added
+// Input :
+// 3
+// 4 5
+// 18 20
+// 49 27
+// Output :
+// 9
+// 38
+// 76
+
+solution ->
+
+import java.util.Scanner;
+class Assignment 
+{
+ public static void main(String[] args) {
+    Scanner kb = new Scanner(System.in);
+    int tc= kb.nextInt() ;
+   int ar[] = new int[tc];
+    for(int i = 0;i<tc; i++)
+    {
+      int a ,b ;
+      a = kb.nextInt();
+      b = kb.nextInt() ;
+      ar[i]= a+ b ;
+    }
+    System.out.println("Output=>");
+    for(int i = 0 ;i<tc;i++)
+    {
+      System.out.println(ar[i]);
+    }
+ }
+}
