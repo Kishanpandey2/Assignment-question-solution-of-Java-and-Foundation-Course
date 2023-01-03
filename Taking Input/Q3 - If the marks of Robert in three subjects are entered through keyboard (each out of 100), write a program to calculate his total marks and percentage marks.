@@ -1,0 +1,29 @@
+// Q3 - If the marks of Robert in three subjects are entered through keyboard (each out of
+// 100), write a program to calculate his total marks and percentage marks.
+// Input :
+// 78
+// 89
+// 95
+// Output : Total marks: 262
+//Percentage marks: 87%
+
+
+solution ->
+
+
+import java.util.Scanner;
+class Assignment 
+{
+ public static void main(String[] args) {
+    Scanner kb = new Scanner(System.in);
+    int a,b,c ;
+    System.out.println("Enter three subject marks of Robert ->");
+    a = kb.nextInt() ;
+     b= kb.nextInt() ;
+     c = kb.nextInt() ;
+     int totalMarks = a+b+c ; 
+     double per = totalMarks/3.0 ;
+     System.out.println("Total marks => "+totalMarks);
+     System.out.println("Percentage => "+per);
+ }
+}
