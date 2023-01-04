@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+//Q5 - Find the total number of bits needed to be flipped to convert x to y.
+//        Input: 65 80
+//        Output: 2
+
+Solution ->
+
+public class Assignment {
+    public static void main(String[] args) {
+        int a,b ;
+        Scanner kb = new Scanner(System.in) ;
+        System.out.println("Enter two nos ->");
+        a = kb.nextInt() ;
+        b = kb.nextInt() ;
+        int xor = a^b ;
+        int totalSetBit = 0 ;
+        while(xor!=0)
+        {
+            xor= xor&(xor-1) ;
+            totalSetBit++;
+        }
+        System.out.println("Output=>"+totalSetBit);
+    }
+}
