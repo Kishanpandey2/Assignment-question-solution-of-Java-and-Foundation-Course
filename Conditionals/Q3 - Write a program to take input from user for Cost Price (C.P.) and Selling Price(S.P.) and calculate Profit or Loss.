@@ -1,0 +1,29 @@
+//Q3 - Write a program to take input from user for Cost Price (C.P.) and Selling Price(S.P.) and
+//        calculate Profit or Loss.
+//        Explanation : Formula for profit and loss
+//        Profit = S.P - C.P
+//        Loss = C.P - S.P
+//        (S.P is Selling Price and C.P is Cost Price)
+//        Sample Input:
+//        Enter cost price: 4000
+//        Enter selling price: 9560
+//
+//        Sample output:
+//        Profit = 5560
+
+solution ->
+
+public class Assignment {
+    public static void main(String[] args) {
+        int cp ,sp ;
+        Scanner kb = new Scanner(System.in) ;
+        System.out.println("Enter cost price and selling price -> ");
+        cp = kb.nextInt() ;
+        sp = kb.nextInt() ;
+        int profit = 0 , loss = 0  ;
+        if(sp> cp)
+        System.out.println("Profit -> "+(sp-cp));
+        else
+            System.out.println("Loss -> "+(cp-sp));
+    }
+}
