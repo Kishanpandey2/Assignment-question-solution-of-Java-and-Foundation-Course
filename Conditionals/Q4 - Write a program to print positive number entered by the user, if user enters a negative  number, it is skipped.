@@ -1,0 +1,18 @@
+//Q4 - Write a program to print positive number entered by the user, if user enters a negative  number, it is skipped
+//        Sample Input: Enter an integer: -6
+//        Sample Output :The number is negative and skipped
+
+solution ->
+
+public class Assignment {
+    public static void main(String[] args) {
+        int n ;
+        Scanner kb = new Scanner(System.in) ;
+        System.out.println("Enter an integer -> ");
+        n = kb.nextInt()  ;
+        if(n>0)
+        System.out.println("Sample output -> "+n);
+        else
+            System.out.println("The number is negative and skipped");
+    }
+}
