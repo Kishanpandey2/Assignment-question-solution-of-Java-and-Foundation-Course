@@ -1,0 +1,28 @@
+//Q1 - Write a program to print Fibonacci series of n terms where n is input by user.
+//        Input1:
+//        6
+//        Output1:
+//        1 1 2 3 5 8
+//        Input2:
+//        2
+//        Output2:
+//        1 1
+
+Solution ->
+
+public class Assignment {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in) ;
+        System.out.println("Input");
+        int n = kb.nextInt() ;
+        int a = 1, b=0, c = 0 ;
+        for(int i = 1;i<=n;i++)
+        {
+            c = a+b ;
+            System.out.print(c+" ");
+
+            a = b ;
+            b = c ;
+        }
+    }
+}
