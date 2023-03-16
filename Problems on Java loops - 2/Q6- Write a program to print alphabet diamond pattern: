@@ -1,0 +1,47 @@
+/*Q6- Write a program to print alphabet diamond pattern: (Hard)
+     A
+    ABC
+   ABCDE
+  ABCDEFG
+ ABCDEFGHI
+  ABCDEFG
+   ABCDE
+    ABC
+     A
+
+        */
+
+import  java.util.Scanner ;
+public class Assignment {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in) ;
+        System.out.println("Enter the value of n number ->");
+        int n = kb.nextInt() ;
+        int temp = 2*n-1 ;
+        int sp = n-1 ;
+
+        for(int  i = 1;i<= temp  ;i++){
+            for(int  j = 1;j<=sp;j++)
+                System.out.print(" ");
+            if(i<=n){
+            for(int j = 1 ;j<= i*2-1 ;j++){
+                char ch =(char) (j+65-1) ;
+                    System.out.print(ch);
+
+            }}
+            else
+            {
+                for(int j =1 ;j<= ( temp-i+1)*2-1 ;j++){
+                char ch =(char) (j+65-1) ;
+                System.out.print(ch);
+
+            }
+            }
+            if(i<n)
+                sp-- ;
+            else
+                sp++;
+            System.out.println();
+        }
+    }
+}
