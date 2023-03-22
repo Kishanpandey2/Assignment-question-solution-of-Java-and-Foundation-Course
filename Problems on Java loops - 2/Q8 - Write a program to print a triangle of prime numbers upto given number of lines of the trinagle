@@ -1,0 +1,59 @@
+/*  Q8 - Write a program to print a triangle of prime numbers upto given number of lines of the trinagle. (Hard)
+     Input1:
+2
+Output1:
+2
+3 5
+Input2:
+6
+Output2:
+
+        2
+       3 5
+     7 11 13
+   17 19 23 29
+ 31 37 41 43 47
+53 59 61 67 71 73
+
+        */
+
+import  java.util.Scanner ;
+public class Assignment {
+
+    private static  boolean isPrime(int n)
+    {
+        if(n==1 )return false ;
+        if(n==2 || n==3)
+            return true ;
+        if(n%2==0 || n%3==0)
+            return false ;
+        for(int i = 5;i*i<=n;i=i+6)
+        {
+            if(n%i==0 || n%(i+2)==0)
+                return false;
+        }
+        return true ;
+    }
+
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in) ;
+        System.out.println("Enter the value of n number ->");
+        int n = kb.nextInt() ;
+        int sp = n-1;
+        int c = 2 ;
+        for(int i = 1 ;i<= n ;i++){
+            for(int j = 1 ;j<=sp;j++)
+                System.out.print(" ");
+
+            for(int j = 1;j<=i;j++) {
+                while(!isPrime(c))
+                    c++;
+                System.out.print(c+" ");
+                c++;
+            }
+            System.out.println();
+
+            sp--;
+        }
+    }
+}
